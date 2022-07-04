@@ -1027,7 +1027,7 @@ int main(int argCount, const char* argv[])
 #endif
                 if (longCommandWArg(&argument, "--patch-from")) { NEXT_FIELD(patchFromDictFileName); continue; }
                 if (longCommandWArg(&argument, "--long")) {
-                    unsigned ldmWindowLog = 0;
+                    unsigned ldmWindowLog = g_defaultMaxWindowLog;
                     ldmFlag = 1;
                     /* Parse optional window log */
                     if (*argument == '=') {
